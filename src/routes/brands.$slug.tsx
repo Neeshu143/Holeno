@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowUpRight, ChevronRight, Quote } from "lucide-react";
-import { BRANDS, getBrand } from "@/lib/brands";
+import { BRANDS, getBrand, type Brand } from "@/lib/brands";
 import { Reveal } from "@/components/site/Reveal";
 import { Seo } from "@/lib/seo";
 
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/brands/$slug")({
 });
 
 function BrandPage() {
-  const { brand } = Route.useLoaderData();
+  const { brand } = Route.useLoaderData() as { brand: Brand };
 
   return (
     <>
