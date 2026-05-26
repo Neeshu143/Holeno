@@ -31,7 +31,7 @@ function About() {
               We were founded with one question: why is everyday healthcare so often poorly made?
             </p>
             <p className="mt-6 text-muted-foreground md:text-lg">
-              From a single Geneva pharmacy in 2012, Vitala has grown into a quietly global group — five brands, four R&amp;D centres, one shared quality system. We don't chase trends. We make the products families return to.
+              From a single Geneva pharmacy in 2012, Vitala has grown into a quietly global group — twenty brands across six categories, four R&amp;D centres, one shared quality system. We don't chase trends. We make the products families return to.
             </p>
           </Reveal>
         </div>

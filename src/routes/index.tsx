@@ -13,9 +13,9 @@ export const Route = createFileRoute("/")({ component: Home });
 
 const STATS = [
   { k: "38", v: "markets worldwide" },
-  { k: "5", v: "category-leading brands" },
+  { k: "20", v: "trusted brands" },
+  { k: "6", v: "health categories" },
   { k: "1.2B", v: "products shipped yearly" },
-  { k: "92%", v: "renewable energy" },
 ];
 
 function Home() {
@@ -42,7 +42,7 @@ function Home() {
         eyebrow="Vitala Global · Consumer Healthcare"
         videoSrc="https://videos.pexels.com/video-files/4124482/4124482-uhd_2560_1440_25fps.mp4"
         title={<>Better everyday<br />health, with <em className="italic text-lime not-italic font-display">humanity.</em></>}
-        subtitle="We are a family of five trusted consumer healthcare brands building products people use every day — backed by clinical rigour, designed for real lives."
+        subtitle="A global family of consumer healthcare brands across oral care, vitamins, respiratory, pain relief, digestive and therapeutic skin health — built on clinical rigour, designed for real lives."
       />
 
       {/* Stats marquee */}
@@ -66,7 +66,7 @@ function Home() {
             </Reveal>
             <Reveal delay={0.1} className="lg:col-span-8">
               <p className="font-display text-4xl leading-[1.1] text-balance md:text-6xl lg:text-7xl">
-                Five brands. One belief — that everyday health should be <span className="text-lime-dim">accessible, evidence-led and beautifully made.</span>
+                Twenty brands. Six categories. One belief — that everyday health should be <span className="text-lime-dim">accessible, evidence-led and beautifully made.</span>
               </p>
               <div className="mt-12 grid gap-8 md:grid-cols-2">
                 <p className="text-pretty text-base text-muted-foreground md:text-lg">
@@ -110,17 +110,17 @@ function Home() {
                   params={{ slug: b.slug }}
                   className="group block overflow-hidden rounded-md bg-white/[0.03] ring-1 ring-white/10 transition-all hover:ring-white/30"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden" style={{ background: `linear-gradient(135deg, ${b.accent}55, ${b.accent}10)` }}>
                     <img
-                      src={b.image}
-                      alt={`${b.name} — ${b.category}`}
+                      src={b.heroImage}
+                      alt={`${b.name} — ${b.categoryLabel}`}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
+                      className="h-full w-full object-cover opacity-40 mix-blend-multiply transition-transform duration-[1200ms] ease-out group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent" />
                     <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.15em] backdrop-blur">
                       <span className="h-1.5 w-1.5 rounded-full" style={{ background: b.accent }} />
-                      {b.category}
+                      {b.categoryLabel}
                     </div>
                   </div>
                   <div className="flex items-start justify-between gap-4 p-6">
