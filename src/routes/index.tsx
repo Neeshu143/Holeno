@@ -13,9 +13,9 @@ export const Route = createFileRoute("/")({ component: Home });
 
 const STATS = [
   { k: "38", v: "markets worldwide" },
-  { k: "5", v: "category-leading brands" },
+  { k: "20", v: "trusted brands" },
+  { k: "6", v: "health categories" },
   { k: "1.2B", v: "products shipped yearly" },
-  { k: "92%", v: "renewable energy" },
 ];
 
 function Home() {
@@ -42,7 +42,7 @@ function Home() {
         eyebrow="Vitala Global · Consumer Healthcare"
         videoSrc="https://videos.pexels.com/video-files/4124482/4124482-uhd_2560_1440_25fps.mp4"
         title={<>Better everyday<br />health, with <em className="italic text-lime not-italic font-display">humanity.</em></>}
-        subtitle="We are a family of five trusted consumer healthcare brands building products people use every day — backed by clinical rigour, designed for real lives."
+        subtitle="A global family of consumer healthcare brands across oral care, vitamins, respiratory, pain relief, digestive and therapeutic skin health — built on clinical rigour, designed for real lives."
       />
 
       {/* Stats marquee */}
@@ -66,7 +66,7 @@ function Home() {
             </Reveal>
             <Reveal delay={0.1} className="lg:col-span-8">
               <p className="font-display text-4xl leading-[1.1] text-balance md:text-6xl lg:text-7xl">
-                Five brands. One belief — that everyday health should be <span className="text-lime-dim">accessible, evidence-led and beautifully made.</span>
+                Twenty brands. Six categories. One belief — that everyday health should be <span className="text-lime-dim">accessible, evidence-led and beautifully made.</span>
               </p>
               <div className="mt-12 grid gap-8 md:grid-cols-2">
                 <p className="text-pretty text-base text-muted-foreground md:text-lg">
